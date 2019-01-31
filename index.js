@@ -1,10 +1,12 @@
 import Game from "./game";
 
+//get canvas and its dimensions
 let canvas = document.getElementById("mycanvas");
 let ctx = canvas.getContext("2d");
 let GAMEW = canvas.width;
 let GAMEH = canvas.height;
 
+//initialize game
 let game = new Game(GAMEW, GAMEH);
 game.start(ctx);
 
